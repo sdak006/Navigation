@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { Provider } from 'react-redux';
-import { CreateStore } from 'redux';
+import { createStore } from 'redux';
 import firebase from 'firebase';
 import reducers from './reducers';
 
@@ -16,7 +16,7 @@ class App extends Component {
             messagingSenderId: '279815132743'
         };
 
-    firebase.initializeApp(config);
+        firebase.initializeApp(config);
     }
 
     render() {
